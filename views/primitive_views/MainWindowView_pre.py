@@ -163,7 +163,7 @@ class Ui_MainWindow(object):
         self.doFilterButton.setText(_translate("MainWindow", "filter"))
         self.MainWindowTitle.setText(_translate("MainWindow", "CC-Sniffer"))
         self.ucasLogo.setToolTip(_translate("MainWindow", "转到https://www.ucas.ac.cn"))
-        self.canLogo.setToolTip(_translate("MainWindow", "转到https://www.ucas.ac.cn"))
+        self.canLogo.setToolTip(_translate("MainWindow", "燦"))
 
 
 if __name__ == "__main__":
