@@ -102,11 +102,19 @@ class MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
         对QLabel控件初始化
         :rtype: None
         """
+        # 设置国科大Logo
         ucasPixmap = QPixmap("./resources/ucas.png")
         ucasPixmap = ucasPixmap.scaled(self.ucasLogo.width() - 3, self.ucasLogo.height() - 3,
                                        Qt.AspectRatioMode.KeepAspectRatio,
                                        Qt.TransformationMode.SmoothTransformation)
         self.ucasLogo.setPixmap(ucasPixmap)
+
+        # 设置燦Logo
+        canPixmap = QPixmap("./resources/can.png")
+        canPixmap = canPixmap.scaled(self.ucasLogo.width(), self.ucasLogo.height(),
+                                     Qt.AspectRatioMode.KeepAspectRatio,
+                                     Qt.TransformationMode.SmoothTransformation)
+        self.canLogo.setPixmap(canPixmap)
         self.textEdit.verticalScrollBar().setVisible(False)
         self.textEdit.verticalScrollBar().setDisabled(True)
         self.textEdit.setReadOnly(True)

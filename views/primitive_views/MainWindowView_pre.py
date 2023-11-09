@@ -121,6 +121,10 @@ class Ui_MainWindow(object):
         self.interfaceLabel.setGeometry(QtCore.QRect(260, 60, 251, 31))
         self.interfaceLabel.setText("")
         self.interfaceLabel.setObjectName("interfaceLabel")
+        self.canLogo = QtWidgets.QLabel(parent=self.centralwidget)
+        self.canLogo.setGeometry(QtCore.QRect(940, 40, 41, 41))
+        self.canLogo.setText("")
+        self.canLogo.setObjectName("canLogo")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusBar = QtWidgets.QStatusBar(parent=MainWindow)
         self.statusBar.setObjectName("statusBar")
@@ -159,6 +163,7 @@ class Ui_MainWindow(object):
         self.doFilterButton.setText(_translate("MainWindow", "filter"))
         self.MainWindowTitle.setText(_translate("MainWindow", "CC-Sniffer"))
         self.ucasLogo.setToolTip(_translate("MainWindow", "转到https://www.ucas.ac.cn"))
+        self.canLogo.setToolTip(_translate("MainWindow", "转到https://www.ucas.ac.cn"))
 
 
 if __name__ == "__main__":
