@@ -51,12 +51,20 @@ class InterfaceSelectDialog(Ui_InterfaceSelectDialog, QtWidgets.QDialog):
             self.listWidget.setItemWidget(listItem, listItem.widget)
 
     def initLabel(self):
+        # 设置UCASLogo
         statuspix = QPixmap("./resources/ucas.png")
         statuspix = statuspix.scaled(QSize(self.ucasLabel.width(), self.ucasLabel.height()),
                                      Qt.AspectRatioMode.KeepAspectRatio,
                                      Qt.TransformationMode.SmoothTransformation
                                      )
         self.ucasLabel.setPixmap(statuspix)
+
+        # 设置燦Logo
+        canPixmap = QPixmap("./resources/can.png")
+        canPixmap = canPixmap.scaled(self.canLogo.width(), self.canLogo.height(),
+                                     Qt.AspectRatioMode.KeepAspectRatio,
+                                     Qt.TransformationMode.SmoothTransformation)
+        self.canLogo.setPixmap(canPixmap)
 
     def mousePressEvent(self, event: QMouseEvent) -> None:
         """

@@ -39,6 +39,10 @@ class Ui_InterfaceSelectDialog(object):
         self.ucasLabel.setGeometry(QtCore.QRect(10, 10, 41, 41))
         self.ucasLabel.setText("")
         self.ucasLabel.setObjectName("ucasLabel")
+        self.canLogo = QtWidgets.QLabel(parent=InterfaceSelectDialog)
+        self.canLogo.setGeometry(QtCore.QRect(660, 50, 41, 41))
+        self.canLogo.setText("")
+        self.canLogo.setObjectName("canLogo")
         self.ucasLabel.raise_()
         self.minButton.raise_()
         self.closeButton.raise_()
@@ -46,6 +50,7 @@ class Ui_InterfaceSelectDialog(object):
         self.label_2.raise_()
         self.textBrowser.raise_()
         self.listWidget.raise_()
+        self.canLogo.raise_()
 
         self.retranslateUi(InterfaceSelectDialog)
         QtCore.QMetaObject.connectSlotsByName(InterfaceSelectDialog)
@@ -55,6 +60,7 @@ class Ui_InterfaceSelectDialog(object):
         InterfaceSelectDialog.setWindowTitle(_translate("InterfaceSelectDialog", "Dialog"))
         self.label.setText(_translate("InterfaceSelectDialog", "捕获"))
         self.label_2.setText(_translate("InterfaceSelectDialog", "显示所有网络适配器"))
+        self.canLogo.setToolTip(_translate("InterfaceSelectDialog", "转到https://www.ucas.ac.cn"))
 
 
 if __name__ == "__main__":

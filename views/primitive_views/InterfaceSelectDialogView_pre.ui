@@ -104,6 +104,22 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="canLogo">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>50</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>转到https://www.ucas.ac.cn</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>ucasLabel</zorder>
   <zorder>minButton</zorder>
   <zorder>closeButton</zorder>
@@ -111,6 +127,7 @@
   <zorder>label_2</zorder>
   <zorder>textBrowser</zorder>
   <zorder>listWidget</zorder>
+  <zorder>canLogo</zorder>
  </widget>
  <resources/>
  <connections/>

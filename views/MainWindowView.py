@@ -111,7 +111,7 @@ class MainWindow(Ui_MainWindow, QtWidgets.QMainWindow):
 
         # 设置燦Logo
         canPixmap = QPixmap("./resources/can.png")
-        canPixmap = canPixmap.scaled(self.ucasLogo.width(), self.ucasLogo.height(),
+        canPixmap = canPixmap.scaled(self.canLogo.width(), self.canLogo.height(),
                                      Qt.AspectRatioMode.KeepAspectRatio,
                                      Qt.TransformationMode.SmoothTransformation)
         self.canLogo.setPixmap(canPixmap)
