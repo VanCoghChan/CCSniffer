@@ -50,9 +50,16 @@ class InterfaceSelectDialogController(QObject):
                                              Qt.TransformationMode.SmoothTransformation
                                              )
                 self.status_labels[idx].setPixmap(statuspix)
-            sentKB = round(current_bytes_flow[0]/1000, 2) if current_bytes_flow[0] else 0
-            recvKB = round(current_bytes_flow[1]/1000, 2) if current_bytes_flow[1] else 0
-            self.bytes_labels[idx].setText(f"↑{sentKB} KB, ↓{recvKB} KB")
+            tag_sent, tag_recv = ("KB",)*2
+            sentFlow = round(current_bytes_flow[0]/1024, 2) if current_bytes_flow[0] else 0
+            recvFlow = round(current_bytes_flow[1]/1024, 2) if current_bytes_flow[1] else 0
+            if sentFlow > 100000:
+                sentFlow = round(sentFlow / 1024, 2)
+                tag_sent = "MB"
+            if recvFlow > 100000:
+                recvFlow = round(recvFlow / 1024, 2)
+                tag_recv = "MB"
+            self.bytes_labels[idx].setText(f"↑{sentFlow} {tag_sent}, ↓{recvFlow} {tag_recv}")
 
     def selectInterfaceAndjump2MainWindow(self):
         selectedItemIndex = self.interface_select_dialog.listWidget.currentRow()

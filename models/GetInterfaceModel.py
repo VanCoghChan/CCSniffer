@@ -28,4 +28,3 @@ class GetInterfaceServer(QObject):
                 res[interface.name] = (bytes_sent, bytes_recv)
             time.sleep(1)
             self.bytes_flow.emit(res)
-        print("线程结束,等待销毁")
