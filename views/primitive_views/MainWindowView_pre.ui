@@ -325,7 +325,7 @@
      <string notr="true">font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
     </property>
     <property name="text">
-     <string>PySniffer</string>
+     <string>CC-Sniffer</string>
     </property>
     <property name="indent">
      <number>-3</number>

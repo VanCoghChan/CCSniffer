@@ -23,6 +23,6 @@ TestResults.xml
 #Person folder
 /Qt-Material-theme/*
 /.idea/*
-/__pycache__/*
+/**/__pycache__
 #Pdf Files
 *.pdf

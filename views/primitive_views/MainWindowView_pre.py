@@ -157,7 +157,7 @@ class Ui_MainWindow(object):
         self.filterlineEdit.setPlaceholderText(_translate("MainWindow", "应用显示过滤器"))
         self.doFilterButton.setToolTip(_translate("MainWindow", "过滤"))
         self.doFilterButton.setText(_translate("MainWindow", "filter"))
-        self.MainWindowTitle.setText(_translate("MainWindow", "PySniffer"))
+        self.MainWindowTitle.setText(_translate("MainWindow", "CC-Sniffer"))
         self.ucasLogo.setToolTip(_translate("MainWindow", "转到https://www.ucas.ac.cn"))
 
 
