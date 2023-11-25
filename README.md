@@ -7,9 +7,7 @@ a demo for "网络与系统安全"(a class in UCAS) Task1
 ## Screen Shots
 
 <p align = "center">    
-<img  src="./screenshots/pic1.PNG" width="400" />
+<img  src="./screenshots/pic1.PNG" width="450" />
+<img  src="./screenshots/pic2.PNG" width="450" />
 </p>
 
-<p align = "center">    
-<img  src="./screenshots/pic2.PNG" width="400" />
-</p>
