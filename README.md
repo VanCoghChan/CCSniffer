@@ -11,5 +11,5 @@ a demo for "网络与系统安全"(a class in UCAS) Task1
 </p>
 
 <p align = "center">    
-<img  src="./screenshots/pic2.PNG" width="600" />
+<img  src="./screenshots/pic2.PNG" width="400" />
 </p>
