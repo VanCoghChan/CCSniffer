@@ -197,9 +197,12 @@ class MainWindowController(QObject):
         # 清空缓存的数据包
         self.stored_packets = list()
         # 清空ScrollArea
-        self.main_window_view.DetailScrollArea.findChildren(QTreeWidget)[0].clear()
-        if self.main_window_view.FrameScrollArea.findChild(QTextEdit):
-            self.main_window_view.FrameScrollArea.findChild(QTextEdit).setPlainText('')
+        tree = self.main_window_view.DetailScrollArea.findChildren(QTreeWidget)
+        if tree:
+            tree[0].clear()
+        text = self.main_window_view.FrameScrollArea.findChild(QTextEdit)
+        if text:
+            text.setPlainText('')
 
     def doUnsaved(self) -> int:
         """
@@ -315,7 +318,6 @@ class MainWindowController(QObject):
                 self.doClear()
                 self.open_file_server.fileName = file_name
                 self.open_file_server.isActive = True
-                pass
         else:
             pass
 
