@@ -47,7 +47,7 @@ class MainWindowController(QObject):
         self.catch_server.packet_number.connect(self.updateStatusBar)
         # self.open_file_server.current_packet_info.connect(self.openFileAppendTable)
         # self.open_file_server.current_paket.connect()
-        # 绑定MainWindow中的功能绑定
+        # 对MainWindow中的功能进行绑定
         self.main_window_view.closeButton.clicked.connect(self.safeQuit)
         self.main_window_view.minButton.clicked.connect(self.main_window_view.showMinimized)
         self.main_window_view.catchButton.clicked.connect(self.doCapture)
